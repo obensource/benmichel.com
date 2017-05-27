@@ -1,0 +1,197 @@
+#root {
+    height: 100%;
+    --base0: #fff;
+    --base20: #F7FAFB;
+    --base50: #ECEFF1;
+    --base100: #CFD8DC;
+    --base200: #B0BEC5;
+    --base300: #90A4AE;
+    --base400: #78909C;
+    --base500: #607D8B;
+    --base600: #546E7A;
+    --base700: #455A64;
+    --base800: #37474F;
+    --base900: #263238;
+    --text-reverse100: rgba(255,255,255,1);
+    --text-reverse70: rgba(255,255,255,0.7);
+    --text-reverse40: rgba(255,255,255,0.4);
+    --accent20: #F0FAFF;
+    --accent50: #E1F5FE;
+    --accent100: #B3E5FC;
+    --accent200: #81D4FA;
+    --accent300: #4FC3F7;
+    --accent400: #29B6F6;
+    --accent500: #03A9F4;
+    --accent600: #039BE5;
+    --accent700: #0288D1;
+    --accent800: #0277BD;
+    --accent900: #01579B;
+}
+input {
+    cursor: inherit;
+}
+a {
+    cursor: pointer;
+}
+#container {
+    height: 100%;
+    width: 100%; 
+}
+#title {
+    color: var(--base700);
+    text-decoration: none;
+}
+#title:hover {
+    color: var(--accent200);
+    letter-spacing: 50px;
+    transition-property: color, letter-spacing;
+    transition-duration: 3000ms;
+    transition-timing-function: ease;
+    cursor: crosshair;
+}
+#header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#avatar {
+  border-top: 1px solid var(--base100);
+  border-radius: 50%;
+}
+#avatar:hover {
+  animation: spin 5s linear infinite;
+  cursor: crosshair;
+}
+#behind {
+  position: absolute;
+  z-index: -1;
+}
+.small-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-bold {
+    font-weight: 600;
+}
+.button {
+    text-decoration: none;
+    margin-right: 2px;
+    padding: 5px 10px;
+    background: var(--accent300);
+    border: 1px solid var(--accent400);
+    border-radius: 2px;
+}
+.button:hover {
+    color: var(--base0);
+    background: var(--base300);
+    border: 1px solid var(--base400);
+    transition-property: background, border, color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+.bold-link-lighter {
+    font-weight: 200;
+    color: var(--base20);
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--base20);
+    border-top: 1px solid var(--base100);
+    padding-bottom: 80px;
+}
+.content {
+    margin-top: 50px;
+    width: 40%;
+}
+.big-text {
+    color: var(--accent300);
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.mid-text {
+    color: var(--accent300);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.name {
+    margin-bottom: 15px;
+}
+.text-block {
+  margin: 40px 0 15px 0;
+}
+.text-mid {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--base900);
+    margin-bottom: 10px;
+}
+.text-mid-bold {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--base900);
+    margin-bottom: 10px;
+}
+.bold-link-darker {
+    font-weight: 600;
+    color: var(--base900);
+}
+.bold-link-darker:hover {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    color: var(--accent300);
+}
+.li {
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.li-mid {
+  line-height: 140%;
+  font-size: 20px;
+}
+.li-header {
+    color: var(--base900);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.li-sub-header {
+    color: var(--base500)
+}
+.li-sub-header-a {
+    text-decoration: none;
+    color: var(--base500)
+}
+.li-sub-header-a:hover {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    color: var(--base700);
+}
+.li-a {
+  text-decoration: none;
+  color: var(--base700);
+}
+.li-a:hover {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    color: var(--base900);
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
